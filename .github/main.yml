@@ -1,10 +1,9 @@
-
 name: Upload Website
 
 on:
   push:
     branches:
-    - main
+    - gittest
 
 jobs:
   deploy:
@@ -20,4 +19,4 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         AWS_REGION: 'ap-south-1'
         SOURCE_DIR: 'website/'
-        DEST_DIR: 'new1'
+        DEST_DIR: 'new1'i
